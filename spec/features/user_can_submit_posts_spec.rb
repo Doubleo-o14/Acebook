@@ -9,10 +9,10 @@ RSpec.feature "Timeline", type: :feature do
     fill_in "password", with: "helloworld"
     click_button "Log in"
     visit "/posts"
-    click_link "New post"
+    click_link "Create Post"
     # fill_in "User", with: "Mr Rails"
     fill_in "Message", with: "Hello, world!"
-    click_button "Submit"
+    click_button "Create!"
     expect(page).to have_content
     
   end

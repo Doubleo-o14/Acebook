@@ -13,7 +13,7 @@ scenario "A user can log out of their account" do
     fill_in "password", with: "helloworld"
     click_button "Log in"
 
-    click_link "Log out"
+    click_link "Logout"
 
     expect(page).to have_content("Log in")
   
