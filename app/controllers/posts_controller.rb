@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
     def create
-      Post.create(post_params.merge(user_id: session[:user_id]))
+      Post.find_by(post_params.merge(message: session[:user_id]))
       redirect_to posts_path
     end
 
